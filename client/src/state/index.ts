@@ -1,11 +1,22 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+interface User {
+    friends: any[];
+}
+
+interface Post {
+    title: string;
+    content: string;
+}
+
 const initialState = {
     mode: "light",
-    user: null,
+    user: null as User | null,
     token: null,
-    posts: [],
+    posts: []as {[key:string]: any}[],
 };
+
+
 
 export const authSlice = createSlice({
     name: "auth",
