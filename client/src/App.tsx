@@ -1,7 +1,9 @@
+import React from "react";
 import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
 import HomePage from "./layout/homePage";
 import LoginPage from "./layout/loginPage";
 import ProfilePage from "./layout/profilePage";
+
 
 function App() {
 
