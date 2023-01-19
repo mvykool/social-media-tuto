@@ -49,7 +49,7 @@ const Navbar = () => {
    const alt: string = theme.palette.background.alt;
 
 
-   const fullName = `${user.firstName} ${user.lastName}`;
+   const fullName = `${user?.firstName} ${user?.lastName}`;
   
    return (
    <FlexBetween bgcolor={alt} padding="1.75rem" >
